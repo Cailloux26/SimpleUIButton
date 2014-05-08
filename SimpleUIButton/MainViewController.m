@@ -65,7 +65,12 @@
     
     //putting point image in UIButtonTypeRoundedRect
 	UIButton *btn6 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-	[btn6 setTitle:@"btn6" forState:UIControlStateNormal];
+    [btn6 setTitle:@"btn6" forState:UIControlStateNormal];
+    [btn6 setTitle:@"btn6 Hightlight" forState:UIControlStateHighlighted];
+    [btn6 setTitle:@"btn6 disabled" forState:UIControlStateDisabled];
+    [btn6 setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [btn6 setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
+    [btn6 setTitleColor:[UIColor grayColor] forState:UIControlStateDisabled];
 	btn6.titleLabel.font = [UIFont systemFontOfSize:16.0];
 	btn6.frame = CGRectMake((self.view.frame.size.width - 150)/2, 380, 150, 40);
 	[btn6 setImage:[UIImage imageNamed:@"Cloud.png"] forState:UIControlStateNormal];
@@ -96,6 +101,7 @@
     btn7.layer.cornerRadius = 15;
     btn7.layer.borderColor=[UIColor blackColor].CGColor;
     btn7.layer.borderWidth=2.0f;
+
  
 }
 
